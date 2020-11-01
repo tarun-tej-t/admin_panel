@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Form.css'
 import 'react-dropdown/style.css';
 
 import Add_data from './Add_data';

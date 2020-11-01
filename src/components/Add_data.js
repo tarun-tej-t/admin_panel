@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import './Form.css'
+
 
 class Add_data extends Component {
     componentDidMount() {
@@ -43,7 +43,7 @@ class Add_data extends Component {
       }
     
       handleSubmit(event) {
-        alert('Your request was submitted');
+        alert('Your request was submitted for adding of data for " '+this.state.value + ' "');
         event.preventDefault();
       }
       
@@ -65,7 +65,7 @@ class Add_data extends Component {
                     <span>Select</span>
                     <i class="fa fa-chevron-left"></i>
                   </div>
-                  <input type="hidden" name="gender"/>
+                  <input type="hidden" name="data_purpose"/>
                   <ul class="dropdown-menu">
                     <li id="Event">Event</li>
                     <li id="Workshop">Workshop</li>
@@ -79,7 +79,7 @@ class Add_data extends Component {
 </label>
         <label> <br/>
              Title:<br/>
-             <input type="text" name="name" />
+             <input value={this.state.value} onChange={this.handleChange} type="text" name="name" />
         </label><br/><br/>
         <label>
              Genre:<br/>
@@ -88,7 +88,7 @@ class Add_data extends Component {
         <label> <br/>
              Description:
         </label><br/>
-        <textarea value={this.state.value} onChange={this.handleChange} placeholder="content..." /><br/><br/>
+        <textarea  placeholder="content..." /><br/><br/>
             <input type="submit" value="Add Data" />
         </form>
         <br/><br/><hr/><br/>
