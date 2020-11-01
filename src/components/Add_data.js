@@ -89,8 +89,8 @@ class Add_data extends Component {
         <label> <br/>
              Description:
         </label><br/>
-        <textarea  placeholder="content..." /><br/><br/>
-            <input type="submit" value="Add Data" name="Description" />
+        <textarea type="text" name="Description" placeholder="content..." /><br/><br/>
+            <input type="submit" value="Add Data"   />
         </form>
         <br/><br/><hr/><br/>
   </div>
