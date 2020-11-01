@@ -46,6 +46,7 @@ class Delete_data extends Component {
     
       handleSubmit(event) {
         alert('Your request was submitted for adding of data for " '+this.state.value + ' "');
+        window.location('#');
         event.preventDefault();
       }
       
@@ -73,7 +74,7 @@ class Delete_data extends Component {
                         <span>Select</span>
                         <i class="fa fa-chevron-left"></i>
                       </div>
-                      <input type="hidden" name="gender"/>
+                      <input type="hidden" name="Data_purpose"/>
                       <ul class="dropdown-menu1">
                         <li id="Event">Event</li>
                         <li id="Workshop">Workshop</li>
@@ -87,7 +88,7 @@ class Delete_data extends Component {
     </label>
             <label> <br/>
                  Title:<br/>
-                 <input value={this.state.value} onChange={this.handleChange} type="text" name="name" />
+                 <input value={this.state.value} onChange={this.handleChange} type="text" name="Title" />
             </label><br/><br/>
             
            

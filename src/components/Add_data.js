@@ -44,6 +44,7 @@ class Add_data extends Component {
     
       handleSubmit(event) {
         alert('Your request was submitted for adding of data for " '+this.state.value + ' "');
+        window.location('#');
         event.preventDefault();
       }
       
@@ -79,17 +80,17 @@ class Add_data extends Component {
 </label>
         <label> <br/>
              Title:<br/>
-             <input value={this.state.value} onChange={this.handleChange} type="text" name="name" />
+             <input value={this.state.value} onChange={this.handleChange} type="text" name="Title" />
         </label><br/><br/>
         <label>
              Genre:<br/>
-             <input type="text" name="name" />
+             <input type="text" name="Genre" />
         </label><br/><br/>
         <label> <br/>
              Description:
         </label><br/>
         <textarea  placeholder="content..." /><br/><br/>
-            <input type="submit" value="Add Data" />
+            <input type="submit" value="Add Data" name="Description" />
         </form>
         <br/><br/><hr/><br/>
   </div>
